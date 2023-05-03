@@ -1,0 +1,386 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    height: 200vh;
+
+    background: rgba(86, 153, 208, 0.8)
+    /* linear-gradient(45deg,rgba(155,167,177, 0.7), transparent),
+    repeating-linear-gradient(45deg, rgba(200,148,93,0.5) 0%,rgba(200,148,93, 1) 5%, rgb(112,75,50) 5%, rgba(112,75,50,0.5) 6%,transparent 6%,transparent 25%),
+    rgba(143,169,188,0.5) repeating-linear-gradient(-45deg, rgb(117,118,121) 0%, rgba(117,118,121,0.5) 5%, transparent 5%, transparent 30%) */
+    /* piękny griadient mojej roboty :) */
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #eabc74;
+    transform: translate(-50%, 0);
+    left: 50%;
+    top: 0%;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    height: 5%;
+    align-items:center;
+    z-index: 999;
+
+}
+nav a {
+    margin: 1%;
+    font-size: 2vh;
+    text-align: center;
+    width: 10vh;
+    height: 60%;
+    color: aliceblue;
+    background-color: #704b32;
+    
+}
+nav h1 {
+    text-align: right;
+    margin-left:25%;
+
+}
+header{
+    height: 95vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(155,167,177, 0.8);
+    margin: 10% 0px ;
+    margin-top: 5vh;
+    border-radius: 10%;
+    /*     flex-direction: column; */
+
+}
+.logo{
+    margin-top: 10%;
+    width: 40%;
+}
+.img_koszyk {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 25% 75%;
+    /*     ladnie zdjecie przycina :) */
+
+}
+.koszyk{
+    text-align: center;
+    background-color: red;
+    width: 50%;
+    height: 100%;
+
+}
+.textWHeader {
+    width: 50%;
+    height: 100%;
+    margin: 0% 0%;
+    background-color: #eabc74;
+    border: 5px solid #704b32;
+    text-align: center;
+    
+}
+.textWHeader > h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 400%;
+    margin-top: 5%;
+}
+.textWHeader > h1::first-line {
+    font-family: 'Dancing Script', cursive;
+    font-size: 70%;
+}
+.textWHeader > h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 250%;
+    margin-top: 5%;
+}
+main{
+    height: 100%;
+}
+main > div {
+    margin: 0px 1%;
+}
+.glowny_tekst {
+    margin-bottom: 5vh;
+    background-color: pink;
+}
+.glowny_tekst h2 {
+    font-family: 'Dancing Script', cursive;
+
+    text-align: center;
+    font-size: 50px;
+    text-align: left;
+    background-color: yellow;
+
+}
+.glowny_tekst p {
+    min-width: 200px;
+    margin-top: 10px;
+    font-size: 30px;
+}
+.puste_miejsce {
+    background-color: aquamarine;
+    min-width: 300px;
+    height: 1px;
+}
+.zdjecie_z_tekstem {
+    margin-bottom: 5vh;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+}
+.zdjecie_z_tekstem img {
+    width: 50%;
+}
+.zdjecie_z_tekstem p, .zdjecie_z_tekstem h2 {
+    font-size: x-large;
+    margin: 0 20px;
+    padding: 5px;
+    text-align: center;
+    background-color: #704b32;
+}
+.flex {
+    display: flex;
+}
+footer {
+    background-color: grey;
+    height: 10vh;
+    text-align: center;
+}
+
+/* dla galeri 33: https://1stwebdesigner.com/css-effects/ */
+
+.galeria_header {
+    margin: 0%;
+    margin-top: 5vh;
+    width: 100%;
+    height: 45vh;
+    background-color: #704b32;
+}
+.galeria_header h1 {
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Dancing Script', cursive;
+}
+.galeria_header h3 {
+    text-align: center;
+    font-size: 40px;
+}
+.galeria_header p {
+    text-align: center;
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+.grid {
+    margin: 0px auto;
+    padding: 5vh;
+    width: 96vw;
+    background-color: rgba(128, 128, 128, 0.8);
+    display: grid;
+    grid-template-columns: repeat(4, 21.5vw);
+    grid-template-rows: repeat(4, 50vh);
+    grid-auto-rows: 50vh;
+    column-gap: 2vh;
+    row-gap: 2vh;
+}
+.grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+
+    position: relative;
+    display: block;
+}
+.galeria_zdjecie {
+    padding: 2%;
+    color: white;
+    position: relative;
+    text-align: center;
+
+    overflow: hidden;
+    cursor: default;
+    background-color: rgb(100, 88, 134);
+}
+.galeria_zdjecie img:hover{
+    transition: all 0.4s ease-in-out;
+    opacity: 80%;
+	transform: scale(1.1);
+
+}
+.galeria_zdjecie:hover .maska { 
+	opacity: 1;
+}
+.maska {
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    transition: all 0.4s ease-in-out;
+}
+
+.galeria_zdjecie h2{
+    margin-top: 10%;
+    width: 100%;
+    height: 10%;
+    background-color: #704b32;
+    font-size: 40px;
+}
+.galeria_zdjecie p{
+    margin-top: 5%;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+.col_span2 {
+    grid-column-end: span 2;
+}
+.row_span2 {
+    grid-row-end: span 2;
+}
+.col_span3 {
+    grid-column-end: span 3;
+}
+
+/* Kontakt */
+
+.kontakt {
+    background-color: #704b32;
+    width: 95vw;
+    height: 95vh;
+    margin: auto;
+    margin-top: 5vh;
+    display: flex;
+}
+.kontakt_lewy {
+    padding: 20px;
+    margin: 2%;
+    width: 50%;
+    height: 90%;
+    background-color: #eabc74;
+}
+.mapa {
+    margin: 2%;
+}
+.kontakt h1 {
+    text-transform: uppercase;
+    font-size: 70px;
+}
+.kontakt h2 {
+    font-size: 50px;
+}
+.kontakt p {
+    font-size: 40px;
+}
+.kontakt img{
+    margin-top: auto;
+}
+@media only screen and (max-width: 600px) {
+
+    
+    nav{
+        background-color: #eabc74;
+        transform: translate(-50%, 0);
+        left: 50%;
+        top: 0%;
+        width: 100%;
+        display: flex;
+        position: fixed;
+        height: 5%;
+        align-items:center;
+    
+    }
+    nav a {
+        font-size: 16px;
+        text-align: center;
+        width: 33%;
+        height: 50%;
+        color: aliceblue;
+        background-color: #704b32;
+    }   
+    .koszyk{
+        background-color: red;
+        margin: auto;
+        width: 100%;
+        height: 50vh;
+    }
+    header{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgba(155,167,177, 0.8);
+        border-radius: 10%;
+        height: 95vh;
+        /*     flex-direction: column; */
+    
+    }
+    .textWHeader {
+        width: 100%;
+        height: 45vh;
+        margin: auto;
+        background-color: #eabc74;
+        border: 5px solid #704b32;
+        text-align: center;
+    }
+    .textWHeader > h1 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 500%;
+        margin-top: 5%;
+    }
+    .textWHeader > h1::first-line {
+        font-family: 'Dancing Script', cursive;
+        font-size: 70%;
+    }
+    .textWHeader > h3{
+        font-family: 'Dancing Script', cursive;
+        font-size: 165%;
+        margin-top: 5%;
+    }
+    .zdjecie_z_tekstem {
+        min-height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .zdjecie_z_tekstem img {
+        width: 100%;
+        order: -1;
+    }
+
+
+
+    /* galeria */
+
+    .grid {
+        background-color: red;
+        display: grid;
+        grid-template-columns: 49.5% 49.5%;
+        grid-template-rows:auto;
+        grid-gap: 1%;
+    }
+
+}
+@media only screen and (max-width: 420px) {
+    .img_koszyk {
+
+    }
+
+}

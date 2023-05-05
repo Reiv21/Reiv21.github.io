@@ -11,7 +11,6 @@
 }
 
 body {
-    height: 200vh;
     color: var(--color2);
     background: var(--color1)
     /* linear-gradient(45deg,rgba(155,167,177, 0.7), transparent),
@@ -23,8 +22,6 @@ nav{
     display: flex;
     justify-content: flex-end;
     background-color: var(--color2);
-    transform: translate(-50%, 0);
-    left: 50%;
     top: 0%;
     width: 100vw;
     display: flex;
@@ -59,6 +56,13 @@ header{
     /*     flex-direction: column; */
 
 }
+.kreska_pod_header{
+    margin: auto;
+    width: 80vw;
+    height: 0.5vh;
+    background-color: var(--color2);
+    margin-top: -5vh;
+}
 .logo{
     margin-top: 15%;
     width: 25%;
@@ -73,7 +77,6 @@ header{
 
 }
 .koszyk{
-    background-color: black;
     text-align: center;
     width: 50%;
     height: 100%;
@@ -104,25 +107,29 @@ main > div {
     margin: 0px 1%;
 }
 .glowny_tekst {
-    padding: 10vh;
+    background-color: var(--color4);
+    padding: 10vh 10vw;
 }
 .glowny_tekst h2 {
     font-family: 'Dancing Script', cursive;
 
     text-align: center;
     font-size:100px;
-    line-height: 90px;
+    line-height: 100px;
+    margin-bottom: 30px;
+    padding-top: 5vh;
 }
 .glowny_tekst p {
+    padding: 0px 1vw;
     line-height: 35px;
     min-width: 200px;
-    margin-top: 10px;
+    margin-top: 2vh;
     font-size: 30px;
 }
 
 .header_i_glowny_tekst {
     margin: 0%;
-    background-image: linear-gradient(var(--color1) 0%,var(--color4) 68%);
+    background-image: linear-gradient(var(--color1) 0%,var(--color4) 50%);
 }
 
 .puste_miejsce {
@@ -138,14 +145,67 @@ main > div {
 .zdjecie_z_tekstem img {
     width: 50%;
 }
-.zdjecie_z_tekstem p, .zdjecie_z_tekstem h2 {
-    font-size: x-large;
+.zdjecie_z_tekstem h2 {
+    font-size: 60px;
+    margin: 0 20px;
+    padding: 5px;
+    text-align: center; 
+}
+.zdjecie_z_tekstem p {
+    font-size: 30px;
     margin: 0 20px;
     padding: 5px;
     text-align: center;
+    line-height: 35px;
 }
-.flex {
+.opinie {
     display: flex;
+    flex-wrap: wrap;
+    height: 85vh;
+    margin: 0px;
+    background-color: var(--color2);
+    color: var(--color1);
+    align-items: center;
+    gap: 2.5%;
+    padding: 2% 5%;
+}
+.klient_zdjecie_div {
+    width: 100%;
+    height: 55%;
+}
+.opinie h2 {
+    align-self: first baseline;
+    text-align: center;
+    width: 100%;
+    font-size: 60px;
+}
+.klient {
+    width: 30%;
+    height: 80%;
+}
+.rozdzielacz_opini {
+    background-color: var(--color4);
+    width: 0vw;
+    height: 0.5vh;
+}
+.opinie img{ 
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 50%;
+}
+.opinie p {
+    color: var(--color1);
+    font-size: 25px;
+    padding: 5px 10px;
+    height: 39%;
+}
+.opinie h3 {
+    width: 60%;
+    margin: auto;
+    color: var(--color1);
+    font-size: 25px;
+    padding: 0px 10px;
 }
 footer {
     background-color: var(--color2);
@@ -300,14 +360,9 @@ footer {
 
     
     nav{
-        background-color: #eabc74;
-        transform: translate(-50%, 0);
-        left: 50%;
-        top: 0%;
         width: 100%;
         display: flex;
         position: fixed;
-        height: 5%;
         align-items:center;
     
     }
@@ -330,7 +385,6 @@ footer {
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
-        background-color: rgba(155,167,177, 0.8);
         border-radius: 10%;
         height: 95vh;
         /*     flex-direction: column; */
@@ -340,8 +394,6 @@ footer {
         width: 100%;
         height: 45vh;
         margin: auto;
-        background-color: #eabc74;
-        border: 5px solid #704b32;
         text-align: center;
     }
     .textWHeader > h1 {
@@ -358,6 +410,12 @@ footer {
         font-size: 165%;
         margin-top: 5%;
     }
+    .glowny_tekst p {
+        line-height: 35px;
+        width: 100%;
+        margin-top: 2vh;
+        font-size: 30px;
+    }
     .zdjecie_z_tekstem {
         min-height: 200px;
         display: flex;
@@ -367,8 +425,38 @@ footer {
         width: 100%;
         order: -1;
     }
+    .puste_miejsce {
+        width: 0px;
+        height: 0px;
+    }
 
-
+    .opinie {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 240vh;
+        margin: 0px;
+        background-color: var(--color2);
+        color: var(--color1);
+        align-items: center;
+        gap: 0%;
+        padding: 2% 5%;
+    }
+    .opinie p{
+        border-left: var(--color1) 2px solid;
+        border-right: var(--color1) 2px solid;
+    }
+    .klient {
+        margin: auto;
+        width: 90%;
+        height: 60vh;
+    }
+    .rozdzielacz_opini {
+        background-color: var(--color4);
+        width: 80vw;
+        height: 0.5vh;
+        margin: auto;
+    }
 
     /* galeria */
 

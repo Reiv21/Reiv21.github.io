@@ -30,6 +30,8 @@ nav{
     align-items:center;
     z-index: 999;
     border-bottom: 3px solid rgba(128, 128, 128, 0.683);
+    padding-right: 3%;
+
 }
 nav a {
     margin: 1%;
@@ -37,18 +39,22 @@ nav a {
     text-align: center;
     width: 10vh;
     height: 60%;
-    color: var(--color);
-    background-color: var(--color3);
+    color: var(--color4);
     text-decoration: none;
+    text-transform:uppercase ;
 }
 nav a:hover {
-    opacity: 0.9;
-    transform: scale(1.05);
+    opacity: 0.7;
 }
 nav h1 {
     text-align: right;
     margin-left:25%;
-
+}
+nav h2 {
+    margin-right: auto;
+    margin-left: 5%;
+    font-family: 'Dancing Script', cursive;
+    color: var(--color4);
 }
 header{
     background-image: linear-gradient(var(--color1) 0%,var(--color4) 100%);
@@ -148,6 +154,7 @@ main > div {
     align-items: center;
 }
 .zdjecie_z_tekstem img {
+    border-radius: 10%;
     width: 50%;
 }
 .zdjecie_z_tekstem h2 {
@@ -212,13 +219,73 @@ main > div {
     font-size: 25px;
     padding: 0px 10px;
 }
+
+.pytania_i_odpowiedzi {
+    color: var(--color1);
+}
+.pytania_i_odpowiedzi > h2 {
+    color: var(--color2);
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 5%;
+}
+.pytania_i_odpowiedzi label{
+    color: var(--color4);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 28px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.pytania_i_odpowiedzi label + input[type="radio"] {
+    display: none;
+}
+.pytania_i_odpowiedzi span {
+    transform: rotate(90deg);
+    font-size: 22px;
+}
+.pytania_i_odpowiedzi ul {
+    margin: 0% auto;
+    width: 60%;
+    min-height: 50vh;
+}
+.pytania_i_odpowiedzi li {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 2%;
+    background-color: var(--color2);
+    padding: 10px;
+    border-radius: 4px;
+}
+.pytania_i_odpowiedzi .odpowiedz {
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.pytania_i_odpowiedzi label + input[type="radio"]:checked + .odpowiedz {
+    max-height: 1000vh;
+}
 footer {
     background-color: var(--color2);
     color: var(--color1);
-    height: 10vh;
+    height: 15vh;
+    text-align: left;
+}
+footer h3 {
     text-align: center;
 }
-
+footer div {
+    width: 20%;
+    margin-left: 30%;
+}
+input[type="radio"]:checked + .pytania_i_odpowiedzi::before span {
+    color: blue;
+}
 /* dla galeri 33: https://1stwebdesigner.com/css-effects/ */
 
 .galeria_header {
@@ -233,13 +300,14 @@ footer {
     font-size: 100px;
     font-family: 'Dancing Script', cursive;
 }
-.galeria_header h3 {
-    text-align: center;
-    font-size: 40px;
-}
 .galeria_header p {
     text-align: center;
     font-size: 50px;
+    margin: 0px 5%;
+}
+.galeria_header h3 {
+    text-align: center;
+    font-size: 40px;
 }
 
 
@@ -331,7 +399,7 @@ footer {
 /* Kontakt */
 
 .kontakt {
-    background-color: #704b32;
+    background-color: var(--color1);
     width: 95vw;
     height: 95vh;
     margin: auto;
@@ -342,21 +410,39 @@ footer {
     padding: 20px;
     margin: 2%;
     width: 50%;
-    height: 90%;
-    background-color: #eabc74;
+    height: 95vh;
 }
 .mapa {
     margin: 2%;
+    width: 50%;
+}
+.mapa iframe {
+    width: 100%;
+    border-radius: 5%;
+}
+.kontakt_tekst {
+    height: 70%;
+}
+.kontakt_media {
+    height: 30%;
+}
+.kontakt_media a{
+    margin: 0px 1%;
 }
 .kontakt h1 {
+    font-family: 'Dancing Script', cursive;
     text-transform: uppercase;
     font-size: 70px;
 }
 .kontakt h2 {
     font-size: 50px;
+    line-height: 50px;
 }
 .kontakt p {
     font-size: 40px;
+    line-height: 60px;
+
+
 }
 .kontakt img{
     margin-top: auto;
@@ -407,6 +493,9 @@ footer {
         width: 33%;
         height: 50%;
     }   
+    nav h2 {
+        display: none;
+    }
     .koszyk{
         margin: auto;
         width: 100%;
@@ -422,8 +511,9 @@ footer {
     }
     .textWHeader {
         width: 100%;
-        height: 45vh;
+        height: 100%;
         margin: auto;
+        margin-top: 5%;
         text-align: center;
     }
     .textWHeader > h1 {
@@ -443,7 +533,9 @@ footer {
     .glowny_tekst{
         padding: 4%;
     }
-    
+    .glowny_tekst h2 {
+        font-size: 80px;
+    }
     .glowny_tekst p {
         line-height: 35px;
         width: 100%;
@@ -452,21 +544,27 @@ footer {
         margin: 0%;
     }
     .zdjecie_z_tekstem {
+        margin: 0%;
         min-height: 200px;
         display: flex;
         flex-wrap: wrap;
     }
-    .zdjecie_z_tekstem p, .zdjecie_z_tekstem h2 {
+    .zdjecie_z_tekstem h2 {
         margin: 0%;
-        text-align: left;
+        padding-left: 2%;
+        text-align: center;
     }
     .zdjecie_z_tekstem p{
+        margin: 0%;
+        padding-left: 2%;
+        text-align: left;
         font-size: 25px;
     }
     .zdjecie_z_tekstem h2{
         font-size: 55px;
     }
     .zdjecie_z_tekstem img {
+        padding: 0%;
         width: 100%;
         order: -1;
     }
@@ -502,7 +600,21 @@ footer {
         height: 0.5vh;
         margin: auto;
     }
-
+    .pytania_i_odpowiedzi ul {
+        margin: 10% auto;
+        width: 80%;
+    }
+    .pytania_i_odpowiedzi h2{
+        font-size: 35px;
+    }
+    .pytania_i_odpowiedzi p{
+        font-size: 25px;
+    }
+    footer div {
+        width: 100%;
+        margin-left: 0;
+        font-size: smaller;
+    }
     /* galeria */
     .grid {
         width: auto;

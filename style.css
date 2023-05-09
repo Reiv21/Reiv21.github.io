@@ -154,7 +154,8 @@ main > div {
     align-items: center;
 }
 .zdjecie_z_tekstem img {
-    box-shadow: var(--color2) 0px 7px 29px 0px;    border-radius: 10%;
+    box-shadow: var(--color2) 0px 7px 29px 0px;    
+    border-radius: 10%;
     width: 50%;
 }
 .zdjecie_z_tekstem h2 {
@@ -201,7 +202,7 @@ main > div {
     height: 0.5vh;
 }
 .opinie img{ 
-    box-shadow: var(--color4) 0px 1px 4px, var(--color4) 0px 0px 0px 3px;    width: 100%;
+    width: 100%;
     object-fit: cover;
     height: 100%;
     border-radius: 50%;
@@ -261,11 +262,12 @@ main > div {
     border-radius: 4px;
 }
 .pytania_i_odpowiedzi .odpowiedz {
+    font-size: 24px;
     padding: 0 10px;
     line-height: 26px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s;
+    transition: max-height 0s linear;
 }
 .pytania_i_odpowiedzi label + input[type="radio"]:checked + .odpowiedz {
     max-height: 1000vh;

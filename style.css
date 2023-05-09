@@ -154,7 +154,7 @@ main > div {
     align-items: center;
 }
 .zdjecie_z_tekstem img {
-    border-radius: 10%;
+    box-shadow: var(--color2) 0px 7px 29px 0px;    border-radius: 10%;
     width: 50%;
 }
 .zdjecie_z_tekstem h2 {
@@ -201,7 +201,7 @@ main > div {
     height: 0.5vh;
 }
 .opinie img{ 
-    width: 100%;
+    box-shadow: var(--color4) 0px 1px 4px, var(--color4) 0px 0px 0px 3px;    width: 100%;
     object-fit: cover;
     height: 100%;
     border-radius: 50%;

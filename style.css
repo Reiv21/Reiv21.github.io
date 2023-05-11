@@ -193,7 +193,7 @@ main > div {
 }
 .klient {
     width: 30%;
-    height: 80%;
+    height: 50%;
 }
 .rozdzielacz_opini {
     background-color: var(--color4);
@@ -628,8 +628,8 @@ input[type="radio"]:checked + .pytania_i_odpowiedzi::before span {
         display: flex;
         flex-wrap: wrap;
         width: 100vw;
-        height: 240vh;
-        margin: 0px;
+        height: 2000px;
+        margin: 50px 0px;
         background-color: var(--color2);
         color: var(--color1);
         align-items: center;
@@ -643,7 +643,7 @@ input[type="radio"]:checked + .pytania_i_odpowiedzi::before span {
     .klient {
         margin: auto;
         width: 90%;
-        height: 60vh;
+        height: 465px;
     }
     .klient_zdjecie_div {
         width: 50vw;
@@ -654,7 +654,7 @@ input[type="radio"]:checked + .pytania_i_odpowiedzi::before span {
         background-color: var(--color4);
         width: 80vw;
         height: 0.5vh;
-        margin: auto;
+        margin: 0 auto;
     }
     .pytania_i_odpowiedzi ul {
         margin: 10% auto;

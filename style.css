@@ -446,11 +446,6 @@ input[type="radio"]:checked + .pytania_i_odpowiedzi::before span {
     width: 100%;
     text-align: center;
 }
-.kontakt h2 {
-    font-size: 50px;
-    width: 100%;
-    text-align: center;
-}
 .kontakt_lewy {
     width: 100%;
 }
@@ -477,7 +472,9 @@ input[type="radio"]:checked + .pytania_i_odpowiedzi::before span {
     margin: 0px 1%;
 }
 .kontakt h2 {
-    font-size: 40px;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
     line-height: 50px;
 }
 .ikonka img {
@@ -743,7 +740,6 @@ input[type="radio"]:checked + .pytania_i_odpowiedzi::before span {
     footer div {
         width: 100%;
         margin-left: 0;
-        font-size: smaller;
     }
     /* galeria */
     .grid {
@@ -767,7 +763,11 @@ input[type="radio"]:checked + .pytania_i_odpowiedzi::before span {
         text-align: center;
         font-size: 40px;
     }
-
+    /* kontakt */
+    .kontakt_media h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
 }
 /*
 

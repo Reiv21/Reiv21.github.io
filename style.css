@@ -322,7 +322,7 @@ input[type="radio"]:checked + .pytania_i_odpowiedzi::before span {
 .galeria_header p {
     text-align: center;
     font-size: 50px;
-    margin: 0px 5%;
+    margin: 50px 5%;
 }
 .galeria_header h3 {
     text-align: center;

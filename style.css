@@ -6,7 +6,7 @@
 
 }
 :root {
-    --color1: #ffeea8;
+    --color1: #ffeea8; /* może  #ffe88c; */
     --color2: #2d2a23;
     --color3: #fc2634;
     --color4: #f5404b;
@@ -39,14 +39,19 @@ nav a {
     margin: 1%;
     font-size: 2vh;
     text-align: center;
-    width: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
     height: 60%;
     color: var(--color4);
     text-decoration: none;
     text-transform:uppercase ;
+    border-radius: 25px;
 }
 nav a:hover {
-    opacity: 0.7;
+    opacity: 0.8;
+    color: #fc2634;
 }
 nav h1 {
     text-align: right;
@@ -80,6 +85,7 @@ header{
     height: 0.5vh;
     background-color: var(--color2);
     margin-top: -5vh;
+    border-radius: 75px;
 }
 .logo{
     margin-top: 15%;
@@ -173,6 +179,7 @@ main > div {
     line-height: 45px;
 }
 .opinie {
+    height: 700px;
     display: flex;
     flex-wrap: wrap;
     margin: 0px;
@@ -184,31 +191,31 @@ main > div {
 }
 .klient_zdjecie_div {
     margin: auto;
-    width: 25vw;
-    height: 25vw;
-}
-.opinie h2 {
-    align-self: first baseline;
-    text-align: center;
-    width: 100%;
-    font-size: 60px;
-    margin-bottom: 100px;
-}
-.klient {
-    width: 30%;
-    height: 50%;
-    border-radius: 40px;
-}
-.rozdzielacz_opini {
-    background-color: var(--color4);
-    width: 0vw;
-    height: 0.5vh;
+    width: 15vw;
+    height: 15vw;
 }
 .opinie img{ 
     width: 100%;
     object-fit: cover;
     height: 100%;
     border-radius: 50%;
+}
+.opinie h2 {
+    align-self: first baseline;
+    text-align: center;
+    width: 100%;
+    font-size: 60px;
+}
+.klient {
+    width: 30%;
+    height: 80%;
+    border-radius: 40px;
+}
+.rozdzielacz_opini {
+    border-radius: 75px;
+    background-color: var(--color4);
+    width: 0vw;
+    height: 0.5vh;
 }
 .opinie p {
     color: var(--color1);

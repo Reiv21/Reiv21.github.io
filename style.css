@@ -2,10 +2,12 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    font-family: 'Libre Bodoni', serif;
+
 }
 :root {
     --color1: #ffeea8;
-    --color2: #423e33;
+    --color2: #2d2a23;
     --color3: #fc2634;
     --color4: #f5404b;
 }

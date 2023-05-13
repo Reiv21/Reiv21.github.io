@@ -179,20 +179,23 @@ main > div {
     line-height: 45px;
 }
 .opinie {
-    height: 700px;
+    height: 600px;
     display: flex;
     flex-wrap: wrap;
     margin: 0px;
     background-color: var(--color2);
     color: var(--color1);
     align-items: center;
+    justify-content: center;
     gap: 2.5%;
     padding: 4% 5%;
 }
+.o_kliencie {
+    display: flex;
+}
 .klient_zdjecie_div {
-    margin: auto;
-    width: 15vw;
-    height: 15vw;
+    width: 100px;
+    height: 100px;
 }
 .opinie img{ 
     width: 100%;
@@ -205,10 +208,11 @@ main > div {
     text-align: center;
     width: 100%;
     font-size: 60px;
+    margin-bottom: 20px;
 }
 .klient {
     width: 30%;
-    height: 80%;
+    height: 70%;
     border-radius: 40px;
 }
 .rozdzielacz_opini {
@@ -219,7 +223,7 @@ main > div {
 }
 .opinie p {
     color: var(--color1);
-    font-size: 25px;
+    font-size: 30px;
     padding: 5px 10px;
     height: 39%;
 }
@@ -569,7 +573,10 @@ input[type="radio"]:checked + .pytania_i_odpowiedzi::before span {
         padding: 2%;
     }
     .opinie {
-        font-size: smaller;
+        height: 800px;
+    }
+    .opinie p {
+        font-size: 25px;
     }
     /* kontakt */
     .kontakt_tekst .ikonka {
@@ -649,7 +656,7 @@ input[type="radio"]:checked + .pytania_i_odpowiedzi::before span {
     }
     .textWHeader > h1 {
         font-family: 'Dancing Script', cursive;
-        font-size: 500%;
+        font-size: 45px;
         margin-top: 5%;
     }
     .textWHeader > h1::first-line {
@@ -665,7 +672,7 @@ input[type="radio"]:checked + .pytania_i_odpowiedzi::before span {
         padding: 4%;
     }
     .glowny_tekst h2 {
-        font-size: 80px;
+        font-size: 70px;
     }
     .glowny_tekst p {
         line-height: 35px;
@@ -705,14 +712,8 @@ input[type="radio"]:checked + .pytania_i_odpowiedzi::before span {
     }
 
     .opinie {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100vw;
-        height: 2000px;
+        height: 1400px;
         margin: 50px 0px;
-        background-color: var(--color2);
-        color: var(--color1);
-        align-items: center;
         gap: 0%;
         padding: 2% 5%;
     }
@@ -720,14 +721,15 @@ input[type="radio"]:checked + .pytania_i_odpowiedzi::before span {
         border-left: var(--color1) 2px solid;
         border-right: var(--color1) 2px solid;
     }
+    .opinie h2 {
+        font-size: 45px;
+    }
     .klient {
         margin: auto;
         width: 90%;
-        height: 465px;
+        height: 300px;
     }
     .klient_zdjecie_div {
-        width: 50vw;
-        height: 50vw;
         margin: auto;
     }
     .rozdzielacz_opini {

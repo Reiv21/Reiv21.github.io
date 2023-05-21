@@ -6,10 +6,17 @@
 
 }
 :root {
-    --color1: #ffeea8; /* może  #ffe88c; */
+    /* może  #ffe88c;  Mamie się podobają:  #ED0004 #0023E0 #FFF1F0*/
+    --color1: #ffeea8;
     --color2: #2d2a23;
     --color3: #fc2634;
     --color4: #f5404b;
+
+    /*
+    --color1: #ffeea8;
+    --color2: #2d2a23;
+    --color3: #fc2634;
+    --color4: #f5404b; */
 }
 
 body {
@@ -37,7 +44,7 @@ nav{
 }
 nav a {
     margin: 1%;
-    font-size: 2vh;
+    font-size: 20px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -89,7 +96,8 @@ header{
 }
 .logo{
     margin-top: 15%;
-    width: 25%;
+    width: 50%;
+    border-radius: 50%;
 }
 .img_koszyk {
     width: 100%;
@@ -197,7 +205,8 @@ main > div {
     width: 100px;
     height: 100px;
 }
-.opinie img{ 
+.opinie img{
+    -webkit-user-drag: none;  
     width: 100%;
     object-fit: cover;
     height: 100%;
@@ -554,6 +563,26 @@ input[type="radio"]:checked + .pytania_i_odpowiedzi::before span {
         display: flex;
         flex-wrap: wrap;
     }
+    .opinie {
+        height: 1200px;
+    }
+    .opinie p {
+        font-size: 25px;
+    }
+    .klient {
+        margin: auto;
+        width: 90%;
+        height: 200px;
+    }
+    .klient_zdjecie_div {
+        margin: auto;
+    }
+    .rozdzielacz_opini {
+        background-color: var(--color4);
+        width: 80vw;
+        height: 0.5vh;
+        margin: 0 10px;
+    }
     /* galeria */
 
     .galeria_header {
@@ -571,12 +600,6 @@ input[type="radio"]:checked + .pytania_i_odpowiedzi::before span {
         grid-gap: 0%;
         margin: auto;
         padding: 2%;
-    }
-    .opinie {
-        height: 800px;
-    }
-    .opinie p {
-        font-size: 25px;
     }
     /* kontakt */
     .kontakt_tekst .ikonka {

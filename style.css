@@ -163,7 +163,6 @@ main > div {
     height: 0px;
 }
 .zdjecie_z_tekstem {
-    width: 100%;
     margin-bottom: 5vh;
     min-height: 200px;
     display: flex;

@@ -329,8 +329,8 @@ input[type="radio"]:checked + .pytania_i_odpowiedzi::before span {
 */
 .galeria_header {
     margin: 0%;
-    margin-top: 55px;
-    width: 100%;
+    margin: 55px 0px;
+        width: 100%;
     height: 45vh;
     background-color: var(--color1);
 }
@@ -461,10 +461,10 @@ input[type="radio"]:checked + .pytania_i_odpowiedzi::before span {
     flex-wrap: wrap;
 }
 .kontakt h1 {
-    margin: 2% 0;
+    margin: 3.5% 0;
     font-family: 'Dancing Script', cursive;
     text-transform: uppercase;
-    font-size: 70px;
+    font-size: 100px;
     width: 100%;
     text-align: center;
 }
@@ -523,7 +523,110 @@ input[type="radio"]:checked + .pytania_i_odpowiedzi::before span {
     width: 70%;
     border-radius: 40px;
 }
+@media only screen and (min-width: 2000px) {
+nav {
+    height: 100px;
+}
+nav h2 {
+    font-size: 50px;
+}
+nav a {
+    font-size: 35px;
+    width: 150px;
+}
+.textWHeader > h1 {
+    font-size: 250px;
+}
+.textWHeader > h3 {
+    font-size: 80px;
+}
+.glowny_tekst h2{
+    font-size: 145px;
+    line-height: 125px;
+}
+.glowny_tekst p {
+    font-size: 40px;
+    line-height: 60px;
+}
 
+.zdjecie_z_tekstem p {
+    font-size: 45px;
+    line-height: 60px;
+}
+
+.zdjecie_z_tekstem h2 {
+    font-size: 85px;
+    line-height: 100px;
+}
+.opinie{
+    height: 950px;
+}
+.opinie h2 {
+    font-size: 85px;
+    line-height: 100px;
+}
+.opinie p {
+    font-size: 42px;
+    line-height: 60px;
+}
+.klient_zdjecie_div {
+    width: 200px;
+    height: 200px;
+}
+.opinie h3{
+    font-size: 60px;
+    line-height: 60px;
+}
+.pytania_i_odpowiedzi > h2 {
+    font-size: 85px;
+    line-height: 100px;
+}
+.pytania_i_odpowiedzi label{
+    font-size: 65px;
+}
+.pytania_i_odpowiedzi .odpowiedz {
+    font-size: 50px;
+    line-height: 60px;
+}
+footer{
+    height: 250px;
+}
+footer h3{
+    font-size: 45px;
+}
+footer h4{
+    font-size: 35px;
+}
+
+/* kontakt */
+.kontakt h1 {
+    margin: 100px 0px;
+    font-size: 120px;
+}
+.kontakt h2 {
+    font-size: 70px;
+}
+.kontakt p {
+    font-size: 40px;
+}
+.kontakt img{
+    width: 200px;
+}
+.ikonka img{
+    width: 40%;
+    height: 40%;
+}
+.galeria_header h1 {
+    margin: 150px 0;
+    font-size: 150px;
+}
+.galeria_header p{
+    font-size: 60px;
+}
+.galeria_header h3{
+    font-size: 55px;
+}
+}
 /*
 
 

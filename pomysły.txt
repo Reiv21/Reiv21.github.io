@@ -1,0 +1,17 @@
+Nagłówki: 
+Dlaczego my?
+nav: dodać logo /done
+poprawic to jak nav sie zachowuje przy małej wysokosci ekranu / done
+footer: zwiekszyc wielkosc czcionki bo Wiktoria mowi ze jest zle
+O nas:
+akordeon z Q&A lub FAQ /done
+usunąć padding na zdjęciach na telefonie w sekcji tekst i zdjecie /done
+opinie: https://stado.dog/?gclid=CjwKCAjwx_eiBhBGEiwA15gLNxbLON0nMxZs5IV_I9-49Ar0xxMyHHsgLIJYM5GRDny61Kxe0bnfmBoCejcQAvD_BwE
+
+Kontakt: na telefonie mapke dodać po mailu a przed mediami
+https://sitkowskibor.pl/kontakt/
+
+https://getcssscan.com/css-buttons-examples?ref=beautifulboxshadow-bottom
+
+Naprawic rozwalanie sie strony ponizej 275px szerokosci
+czesciowo psuje napis szczesliwi klienci

@@ -449,7 +449,6 @@ input[type="radio"]:checked + .pytania_i_odpowiedzi::before span {
 .galeria_zdjecie h2{
     margin-top: 10%;
     width: 100%;
-    height: 10%;
     background-color: #704b32;
     font-size: 40px;
 }
@@ -967,10 +966,19 @@ footer h4{
         text-align: center;
         font-size: 40px;
     }
+    .galeria_zdjecie h2 {
+        font-size: 28px;
+        height: 40px;
+        height: auto;
+    }
     /* kontakt */
     .kontakt_media h2{
         font-size: 30px;
         line-height: 40px;
+    }
+    .kontakt_media a img {
+        width: 80px;
+        margin-top: 0px;
     }
 }
 /*
